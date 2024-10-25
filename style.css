@@ -8,6 +8,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #E9ECF5; /* Fundo suave azul claro */
     color: #f0f0f0;
+    background-image: url(fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 header {
@@ -17,6 +20,8 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    margin: 50px;
 }
 
 header img {
@@ -55,48 +60,52 @@ nav a:hover {
 
 .categories {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: #fff;
+    
+
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin: 20px auto;
-    max-width: 90%;
+    margin: 50px ;
+    max-width: 100%;
+    justify-content: space-between;
 }
 
 .categories button {
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
-    background-color: #f0f0f0;
+    background-color: transparent;
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 25px;
+    border: solid 1px;
+    color: #fff;
+    
 }
 
 .categories button.active,
 .categories button:hover {
-    background-color: #3C3E7F;
-    color: #fff;
+    background-color: #fff;
+    color: black;
 }
 
 .courses {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-between;
+    
     padding: 80px;
-    max-width: 1500px;
+    /* max-width: 1500px; */
     margin: 0 auto;
 }
 
 .course-card {
-    background-color: #fff;
+    background-color: #3C3E7F;
     border-radius: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 360px;
+    width: 520px;
+    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -107,12 +116,12 @@ nav a:hover {
 
 .course-card img {
     width: 100%;
-    height: 200px;
+    height: 320px;
     object-fit: cover;
 }
 
 .course-card h3 {
-    background-color: #3C3E7F;
+    
     color: white;
     padding: 15px;
     font-size: 1.2em;
@@ -122,7 +131,7 @@ nav a:hover {
 .course-card p {
     padding: 15px;
     text-align: center;
-    color: #555;
+    color: rgb(168, 127, 168);
     font-size: 0.9em;
 }
 
@@ -136,6 +145,7 @@ nav a:hover {
     font-weight: bold;
     border-radius: 0 0 10px 10px;
     transition: background-color 0.3s ease;
+    margin: 0 100px;
 }
 
 .enroll-btn:hover {
@@ -153,8 +163,8 @@ footer {
     color: white;
     text-align: center;
     padding: 30px;
-    margin-top: 350px;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 /* Responsividade */
@@ -185,4 +195,14 @@ footer {
 
 
 
+}
+
+.ss{
+    margin: 50px;
+    font-size: 25px;
+}
+
+hr{
+    margin: 50px;
+    
 }
